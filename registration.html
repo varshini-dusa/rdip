@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://www.iiit.ac.in/"
+        ><img src="https://www.iiit.ac.in/img/iiit-new.png" id="image"
+      /></a>
+      <a href="https://serc.iiit.ac.in/rdip" id="right">RDIP</a>
+    </div>
+    <div class="container row">
+      <ul>
+        <li><a href="./homepage.html">Home</a></li>
+        <li><a href="./registration.html">Registration Form</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <form action="./details.html" method="GET">
+        <table>
+          <tr>
+            <td><label for="name">First Name:</label></td>
+            <td><input type="text" name="name" id="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="mail">E-mail:</label></td>
+            <td><input type="text" name="mail" id="mail" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phn">Phone No:</label></td>
+            <td><input type="text" name="phn" id="phn" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
+              <label for="male">Male</label
+              ><input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label
+              ><input type="radio" name="gender" id="other" value="other" />
+              <label for="other">Other</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Reason for RDIP:</td>
+            <td>
+              <input
+                type="checkbox"
+                name="html"
+                id="html"
+                value="html"
+                checked
+                required
+              />
+              <label for="html">HTML</label
+              ><input type="checkbox" name="css" id="css" value="css" />
+              <label for="css">CSS</label
+              ><input type="checkbox" name="js" id="js" value="js" />
+              <label for="js">JavaScript</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="college">College:</label></td>
+            <td><input type="text" name="college" id="college" required /></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="decla" id="decla" required /></td>
+            <td>
+              <label for="decla"
+                >I declare above details given by me are true.</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><button type="submit">Submit</button></td>
+            <td><button type="reset">Reset</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
