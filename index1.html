@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style1.css" />
+    <script src="./main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="title col">Calculator</h1>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col">
+          <label for="operation">Select operation</label>
+          <select name="operation" id="operation" onchange="display()">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+            <option value="absolute">Absolute</option>
+            <option value="sqrt">Square Root</option>
+          </select>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <label for="inp1">Input 1</label>
+          <input type="text" name="inp1" id="inp1" />
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col">
+          <label for="inp2" id="lab2">Input 2</label>
+          <input type="text" name="inp2" id="inp2" /><br />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-success"
+            onclick="validateForm()"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <p id="demo"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
